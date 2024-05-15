@@ -1,132 +1,85 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
-
-* {
+/* Global Styles */
+body {
+    font-family: 'Monaco', 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    background-color: #ede6b9; /* very light coral */
 }
 
-nav {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 900;
-    display: flex;
-    font-size: 20px;
-    background-color: rgb(224, 209, 245);
-    padding: 23px;
+/* Header Styles */
+.header {
+    background-color: #829079; /* lavender */
+    padding: 20px;
+    text-align: center;
 }
 
-nav li a {
-    text-decoration: none;
-    color: rgb(2, 3, 18);
-    transition: all;
-    transition-duration: 500ms;
-}
-
-nav li a:hover {
-    text-decoration: none;
-    color: rgb(103, 101, 235);
-}
-
-div.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 23px;
+.logo {
     font-size: 24px;
+    color: #000000; /* rebeccapurple */
 }
 
-nav ul li {
-    list-style: none;
-    margin: 0 23px;
-}
-
-nav ul {
-    display: flex;
-}
-
+/* Container Styles */
 .container {
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    max-width: 80vw;
-    margin: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.container h1,
-h2 {
-    margin: 23px 0;
+h1 {
+    color: #fff;
+    background-color: #b9925e; /* coral */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.container form {
-    display: flex;
-    flex-direction: column;
+/* Currency Converter Styles */
+.converter {
+    margin-top: 20px;
 }
 
-.container form label {
-    font-size: 25px;
+.input-group {
+    margin-bottom: 15px;
 }
 
-.container form input[type='number'],
-select,
-label {
-    font-size: 25px;
-    width: 23vw;
-    margin-bottom: 23px;
+.input-group input[type="number"],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.btn {
-    width: 144px;
-    padding: 5px 8px;
-    font-size: 20px;
-    background: #e0d0f5;
-    color: black;
-    border-radius: 13px;
+.input-group input[type="text"] {
+    width: calc(100% - 45px);
+}
+
+.converter button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #66a0dd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.output {
-    display: none;
+.converter button:hover {
+    background-color: #0056b3;
 }
 
-.output table {
-    width: 50vw;
+/* Footer Styles */
+.footer {
     text-align: center;
-    border: 2px solid black;
-    font-size: 20px;
+    background-color: #829079; /* lavender */
+    padding: 20px;
+    margin-top: 150px;
 }
-
-.output table th{
-    padding: 3px;
-}
-
-@media (max-width: 600px) {
-    
-
-    nav {
-        flex-direction: column;
-        font-size: 14px;
-    }
-
-    nav ul li {
-        margin: 5px 13px;
-    }
-
-    nav ul {
-        justify-content: center;
-    }
-
-    .container {
-        max-width: 95vw;
-    }
-
-    .container form input[type='number'],
-    select,
-    label {
-        width: 80vw;
-    }
-}
-
-footer {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
