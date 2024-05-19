@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-
+/*styling heading*?
 h1 {
     color: #fff;
     background-color: #b9925e; /* coral */
@@ -59,7 +59,7 @@ h1 {
 .input-group input[type="text"] {
     width: calc(100% - 45px);
 }
-
+/*converting button here*/
 .converter button {
     display: block;
     width: 100%;
