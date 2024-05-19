@@ -2,7 +2,7 @@ function convert() {
     var amount = parseFloat(document.getElementById('amount').value);
     var fromCurrency = document.getElementById('fromCurrency').value;
     var toCurrency = document.getElementById('toCurrency').value;
-
+/*javscript here*/
     var conversionRates = {
         USD: {
             EUR: 0.92,
@@ -27,6 +27,6 @@ function convert() {
     };
 /* you can also insert an API here */
     var result = amount * conversionRates[fromCurrency][toCurrency];
-/*currency converter*/
+/*currency converter use to convert currency*/
     document.getElementById('result').value = result.toFixed(2);
 }
