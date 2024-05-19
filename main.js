@@ -27,6 +27,6 @@ function convert() {
     };
 
     var result = amount * conversionRates[fromCurrency][toCurrency];
-
+/*currency converter*/
     document.getElementById('result').value = result.toFixed(2);
 }
