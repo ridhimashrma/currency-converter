@@ -24,6 +24,7 @@ function convert() {
             EUR: 0.011,
             GBP: 0.0095
         }
+        /*usd eur bgp here*/
     };
 /* you can also insert an API here */
     var result = amount * conversionRates[fromCurrency][toCurrency];
