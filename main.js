@@ -25,7 +25,7 @@ function convert() {
             GBP: 0.0095
         }
     };
-
+/* you can also insert an API here */
     var result = amount * conversionRates[fromCurrency][toCurrency];
 /*currency converter*/
     document.getElementById('result').value = result.toFixed(2);
